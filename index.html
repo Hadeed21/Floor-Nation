@@ -800,14 +800,11 @@
       var message = document.getElementById("message").value;
 
       var url = "https://wa.me/+923352441890?text=" 
-      + "Hello Floor Nation! 👋%0a%0a"
-      + "*Contact Form Submission:*%0a%0a"
+      + "Hello Floor Nation! %0a" 
       + "*Name:* " + name + "%0a"
       + "*Email:* " + email + "%0a"
-      + "*Subject:* " + subject + "%0a%0a"
+      + "*Subject:* " + subject + "%0a"
       + "*Message:*%0a" + message + "%0a%0a"
-      + "---%0a"
-      + "This message was sent from the Floor Nation website contact form."; 
 
       window.open(url, '_blank').focus();
     }
