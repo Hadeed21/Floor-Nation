@@ -83,7 +83,7 @@
                         </div>
                         <div class="col-md-12">
                           <div class="form-group">
-                            <input type="submit" value="Send Message" class="btn btn-primary">
+                            <input type="submit" value="Send Message" class="btn btn-primary" onclick="gotowhatsapp();">
                             <div class="submitting"></div>
                           </div>
                         </div>
@@ -747,7 +747,7 @@
               <li><a href="#" class="py-1 d-block">Services</a></li>
               <li><a href="#" class="py-1 d-block">Projects</a></li>
               <li><a href="#" class="py-1 d-block">Contact</a></li>
-			  <li><a href="#" class="py-1 d-block">Privacy Policy</a></li>
+			  <li><a href="privacy-policy.html" class="py-1 d-block">Privacy Policy</a></li>
             </ul>
 					</div>
 					<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
@@ -790,6 +790,28 @@
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/scrollax.min.js"></script>
   <script src="js/main.js"></script>
+  
+  <script>
+    function gotowhatsapp() {
+      
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var subject = document.getElementById("subject").value;
+      var message = document.getElementById("message").value;
+
+      var url = "https://wa.me/+923352441890?text=" 
+      + "Hello Floor Nation! 👋%0a%0a"
+      + "*Contact Form Submission:*%0a%0a"
+      + "*Name:* " + name + "%0a"
+      + "*Email:* " + email + "%0a"
+      + "*Subject:* " + subject + "%0a%0a"
+      + "*Message:*%0a" + message + "%0a%0a"
+      + "---%0a"
+      + "This message was sent from the Floor Nation website contact form."; 
+
+      window.open(url, '_blank').focus();
+    }
+  </script>
     
   </body>
 </html>
