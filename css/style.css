@@ -1,3 +1,17 @@
+/* Floor Nation: mobile spacing for contact block */
+@media (max-width: 767.98px) {
+  .hero-wrap .contact-wrap {
+    margin-top: 24px;
+  }
+  .hero-wrap .info-wrap,
+  .hero-wrap .info-wrap.img-1 {
+    margin-bottom: 24px;
+  }
+  /* help keep the stacked block visually centered */
+  .hero-wrap .wrapper .row.no-gutters {
+    justify-content: center;
+  }
+}
 /* Navbar opacity and logo sizing */
 nav.ftco-navbar-light {
   background: rgba(34, 34, 34, 0.87) !important
@@ -13717,6 +13731,10 @@ textarea.form-control {
   .heading-section h2 {
     font-size: 28px;
   }
+  .img-1{
+    border-bottom-left-radius: 20px !important;
+    border-top-right-radius: 0px !important;
+  }
 }
 
 .heading-section.heading-section-white .subheading {
@@ -13732,9 +13750,8 @@ textarea.form-control {
 }
 
 .img-1 {
-  /* border-top-right-radius: 20px !important; */
+  border-top-right-radius: 20px;
   border-bottom-right-radius: 20px !important;
-  border-bottom-left-radius: 20px !important;
   opacity: 0.8;
   width: 100%;
   background-size: cover;
